@@ -30,5 +30,4 @@ submit.addEventListener('click', (e) => {
 
   const newScore = new Fetch(data);
   newScore.addData();
-  getScore();
 });
