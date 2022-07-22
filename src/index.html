@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leader board</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -16,15 +15,10 @@
             <article class="scores">
                 <header class="scores-header">
                     <h3>Recent scores</h3>
-                    <button class="button">Refresh</button>
+                    <button class="button" id="refresh">Refresh</button>
                 </header>
                 <ul class="scores-list">
-                    <li>Name: 100</li>
-                    <li>Name: 20</li>
-                    <li>Name: 50</li>
-                    <li>Name: 78</li>
-                    <li>Name: 125</li>
-                    <li>Name: 77</li>
+                    
                 </ul>
             </article>
             <aside class="score-form">
@@ -32,13 +26,12 @@
                     <h3>Add Your Scores</h3>
                 </header>
                 <form class="form">
-                    <input type="text" class="input" placeholder="your name"><br><br>
-                    <input type="text" class="input" placeholder="your scores"><br><br>
-                    <input type="submit" class="button" value="Submit"><br>
+                    <input type="text" class="input" id="name" placeholder="your name" required><br><br>
+                    <input type="number" class="input" id="score" placeholder="your scores" required><br><br>
+                    <input type="submit" class="button" id="save" value="Submit"><br>
                 </form>
             </aside>
         </section>
     </main>
-    
 </body>
 </html>
